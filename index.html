@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Registration Form</h2>
+      </div>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Name" id="name" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="email" placeholder="email@email.com" id="email" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="number">Mobile Number</label>
+          <input placeholder="Input 11 digit Mobile number" id="number" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <div class="padding-warp">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password" />
+
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+        </div>
+        <div class="form-control">
+          <label for="password_check">Confirm Password</label>
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            id="password2"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
